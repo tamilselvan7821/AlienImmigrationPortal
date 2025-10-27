@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alien Portal</title>
+  <link rel="stylesheet" href="alienStyles.css">
+</head>
+<body>
+    <form id="formId" novalidate autocomplete="off">
+    <div class="blur-box">
+        <h1>Alien Immigration Portal</h1>
+        <label for="pName"><pre>Planet Name            : <input id="pName" oninput="checkPlanet()" type="text" autocomplete="off" required></pre></label>
+        <p id="errorPlanet" style="margin-left: 300px;">* Must contain at least one vowel and one digit </p>
+        <label for="aName"><pre>Alien Name             : <input id="aName" oninput="checkName()" type="text" autocomplete="off" required></pre></label>
+        <p id="errorName" style="margin-left: 75px;">* Enter Valid Name</p>
+        <label for="aId"><pre>Alien Id               : <input id="aId" oninput="checkId()" type="text" autocomplete="off" required></pre></label>
+        <p id="errorId" style="margin-left: 185px;" >* Pattern like ZOR-XY_9999@UFO </p>
+        <label for="aCount"><pre>Antenna Count          : <input id="aCount" oninput="checkAntena()" type="text" autocomplete="off" required></pre></label>
+        <p id="errorAntena" style="margin-left: 160px;">* Only even numbers allowedi</p>
+        <label for="humanPharse"><pre>Favourite human Pharse : <input id="humanPharse" oninput="checkPharse()" type="text" autocomplete="off" required></pre></label>
+        <p id="errorPharse" style="margin-left: 303px;">* Must contain at least one emoji or punctuation </p>
+        <label for="landDate" style="margin-left:-72px;"><pre>Landing Date           : <input id="landDate" type="date" required></pre></label>
+        <label for="photo" style="margin-left:85px;"><pre>Upload Your Photo      : <input id="photo" type="file" required></pre></label>
+        <p id="errorPhoto" style="margin-left: 185px;">* upload only JPEG/JPG/PNG format</p>
+        <br>
+        <button type="submit">Register</button>
+    </div>
+    </form>
+    <div class="out" id="showOut">
+      ✅ Registration Successful!
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+ 
+</script>
+</html>
